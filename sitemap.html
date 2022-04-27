@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Sitemap - Gooreel</title>
+	<meta name="description" content="Gooreel">
+	<meta name="keywords" content="Gooreel, Games">
+	<meta property="og:locale" content="[locale]" />
+	<meta property="og:title" content="Gooreel" />
+	<meta property="og:description" content="Games" />
+	<meta property="og:url" content="[url]" />
+	<meta property="og:image" content="img/favicons/opengraph.jpg" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<link type="image/x-icon" rel="shortcut icon" href="img/favicons/favicon-ico-258x258.ico">
+	<link type="image/png" sizes="16x16" rel="icon" href="img/favicons/favicon-16x16.png">
+	<link type="image/png" sizes="32x32" rel="icon" href="img/favicons/favicon-32x32.png">
+	<link type="image/png" sizes="48x48" rel="icon" href="img/favicons/favicon-48x48.png">
+	<link sizes="180x180" rel="apple-touch-icon" href="img/favicons/apple-touch-icon-180x180.png">
+	<link color="#088ECB" rel="mask-icon" href="img/favicons/safari-pinned-tab-16x16.svg">
+	<meta name="msapplication-TileColor" content="#088ECB">
+	<meta name="msapplication-TileImage" content="img/favicons/mstile-144x144.png">
+	<meta name="application-name" content="Gooreel">
+	<meta name="theme-color" content="#000000">
+	<meta name="msapplication-config" content="others/browserconfig.xml">
+	<!-- <link rel="manifest" crossorigin="use-credentials" href="others/manifest.json"> -->
+	<style>
+		.preloader {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 9999;
+			transition-delay: 2.525s;
+		}
+
+		.preloader__wrapper {
+			display: grid;
+			grid-template-columns: repeat(5, 1fr);
+		}
+
+		.preloader__wrapper span {
+			transform-origin: top;
+			height: 100vh;
+			transform: scale(1.1, 1);
+			transition: transform 1.25s cubic-bezier(.87, -0.14, 0, 1.04);
+			background: #5FC194;
+			will-change: transform;
+		}
+
+		.preloader__wrapper span:nth-child(1) {
+			transition-delay: 0.1s;
+		}
+
+		.preloader__wrapper span:nth-child(2) {
+			transition-delay: 0.15s;
+		}
+
+		.preloader__wrapper span:nth-child(3) {
+			transition-delay: 0.220s;
+		}
+
+		.preloader__wrapper span:nth-child(4) {
+			transition-delay: 0.240s;
+		}
+
+		.preloader__wrapper span:nth-child(5) {
+			transition-delay: 0.275s;
+		}
+
+		html.loaded .preloader span {
+			transform: scaleY(0);
+		}
+
+		html.loaded .preloader {
+			transform: translateY(-200%);
+		}
+	</style>
+</head>
+
+<body>
+	<div class="preloader">
+		<div class="preloader__wrapper">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+	<div class="rootpage">
+		<h1>Front-end «Gooreel»</h1>
+		<h6>Готові сторінки:</h6>
+		<ol class="rootpage__list">
+			<li><a target="_blank" href="index.html">Головна</a></li>
+			<li><a target="_blank" href="about.html">About</a></li>
+			<li><a target="_blank" href="team.html">Team</a></li>
+			<li><a target="_blank" href="career.html">Career</a></li>
+			<li><a target="_blank" href="game.html">Game</a></li>
+			<li><a target="_blank" href="games.html">Games</a></li>
+			<li><a target="_blank" href="vacancy.html">Vacancy</a></li>
+			<li><a target="_blank" href="news.html">News</a></li>
+			<li><a target="_blank" href="partners.html">Partners</a></li>
+			<li><a target="_blank" href="employee.html">Employee</a></li>
+			<li><a target="_blank" href="article.html">Article</a></li>
+			<li><a target="_blank" href="contacts.html">Contacts</a></li>
+			<li><a target="_blank" href="404.html">404</a></li>
+		</ol>
+		<h6>Попапи:</h6>
+		<ol class="rootpage__list">
+			<li><a data-popup-link="[data-popup='vacancyPopup']" href="">Vacancy</a></li>
+			<li><a data-popup-link="[data-popup='feedbackPopup']" href="">Feedback</a></li>
+			<li><a data-popup-link="[data-popup='successPopup']" href="">Success</a></li>
+		</ol>
+	</div>
+	<div class="hystmodal" data-popup="vacancyPopup">
+		<div class="hystmodal__wrap">
+			<div class="hystmodal__window" role="dialog" aria-modal="true">
+
+				<button data-hystclose class="hystmodal__close">Закрыть</button>
+				<h5>Senior Character Artist</h5>
+				<!-- ============================= FORM ============================= -->
+				<div class="page-form">
+					<form class="form" action="#" data-message="[data-popup='successPopup']" data-test>
+						<fieldset class="form__wrapper">
+							<div class="form__item" data-float-label>
+								<input type="text" name="name">
+								<label>
+									<span class="content-name">Name</span>
+								</label>
+							</div>
+							<div class="form__item" data-float-label>
+								<input type="text" name="email" data-required="email">
+								<label>
+									<span class="content-name">Email</span>
+								</label>
+							</div>
+							<div class="form__item" data-float-label>
+								<input type="text" name="phone" data-phone-mask data-required>
+								<label>
+									<span class="content-name">Phone number</span>
+								</label>
+							</div>
+							<div class="form__item" data-float-label>
+								<input type="text" name="linkDin-url">
+								<label>
+									<span class="content-name">LinkeDin URL</span>
+								</label>
+							</div>
+							<div class="form__item" data-float-label>
+								<input type="text" name="Portfolio-URL">
+								<label>
+									<span class="content-name">Portfolio URL</span>
+								</label>
+							</div>
+							<div class="form__item form__item_textarea" data-float-label>
+								<textarea name="message"></textarea>
+								<label>
+									<span class="content-name">Message</span>
+								</label>
+							</div>
+							<div class="form__item" data-input-file>
+								<input accept=".pdf, .png, .doc" type="file" name="file" class="file__input" data-error="Use only .pdf .doc .png" data-error-max-size="ATTACHED CV FILE (max 2Mb) *" data-placeholder="CV" data-required>
+								<div class="file__button">
+									<span class="message-text"></span>
+								</div>
+								<div class="icon-pin">
+									<img class="cross-icon" src="img/interface/file-cross.svg" alt="Gooreel">
+									<img class="pin-icon" src="img/interface/pin.svg" alt="Gooreel">
+								</div>
+							</div>
+
+						</fieldset>
+
+						<div class="form__controls">
+							<button type="submit" class="link-btn">
+								<span>Send</span>
+								<img data-src="img/interface/link-btn.svg" data-inline-svg alt="Gooreel">
+							</button>
+							<div class="checkbox">
+								<label class="checkbox__text">
+									<input checked type="checkbox" name="agreement" class="checkbox__input" data-required>
+									<span class="icon-check"></span>
+									<span>I agree to the processing of personal data</span>
+								</label>
+							</div>
+						</div>
+
+					</form>
+				</div>
+				<!-- ============================= FORM ============================= -->
+
+			</div>
+		</div>
+	</div>
+
+	<div class="hystmodal" data-popup="feedbackPopup">
+		<div class="hystmodal__wrap">
+			<div class="hystmodal__window" role="dialog" aria-modal="true">
+
+				<button data-hystclose class="hystmodal__close">Закрыть</button>
+				<h5>Feedback from</h5>
+				<!-- ============================= FORM ============================= -->
+				<div class="page-form">
+					<form class="form" action="#" data-message="[data-popup='successPopup']" data-test>
+						<fieldset class="form__wrapper">
+							<div class="form__item" data-float-label>
+								<input type="text" name="name">
+								<label>
+									<span class="content-name">Name</span>
+								</label>
+							</div>
+							<div class="form__item" data-float-label>
+								<input type="text" name="email" data-required="email">
+								<label>
+									<span class="content-name">Email</span>
+								</label>
+							</div>
+							<div class="form__item" data-float-label>
+								<input type="text" name="phone" data-phone-mask data-required>
+								<label>
+									<span class="content-name">Phone number</span>
+								</label>
+							</div>
+							<div class="form__item form__item_textarea" data-float-label>
+								<textarea name="message"></textarea>
+								<label>
+									<span class="content-name">Message</span>
+								</label>
+							</div>
+
+						</fieldset>
+
+						<div class="form__controls">
+							<button type="submit" class="link-btn">
+								<span>Send</span>
+								<img data-src="img/interface/link-btn.svg" data-inline-svg alt="Gooreel">
+							</button>
+							<div class="checkbox">
+								<label class="checkbox__text">
+									<input checked type="checkbox" name="agreement" class="checkbox__input" data-required>
+									<span class="icon-check"></span>
+									<span>I agree to the processing of personal data</span>
+								</label>
+							</div>
+						</div>
+
+					</form>
+				</div>
+				<!-- ============================= FORM ============================= -->
+
+			</div>
+		</div>
+	</div>
+
+	<div class="hystmodal" data-popup="successPopup">
+		<div class="hystmodal__wrap">
+			<div class="hystmodal__window" role="dialog" aria-modal="true">
+
+				<button data-hystclose class="hystmodal__close">Закрыть</button>
+				<h5>Success!</h5>
+				<p>Your application has been accepted, our manager will contact you soon</p>
+				<div data-hystclose class="link-btn">
+					<span>Close</span>
+					<img data-src="img/interface/link-btn.svg" data-inline-svg alt="Gooreel">
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- style -->
+	<link rel="stylesheet" href="css/style.min.css">
+	<!-- global variable -->
+	<script>
+		let validationUnfillError = "Заповніть поле"
+		let validationUncorrectError = "Некоректний формат"
+	</script>
+	<!-- custom -->
+	<script defer src="js/main.min.js"></script>
+</body>
+<style>
+	@charset "UTF-8";
+	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
+
+	*,
+	*::before,
+	*::after {
+		padding: 0px;
+		margin: 0px;
+		border: 0px;
+		box-sizing: border-box;
+	}
+
+	html,
+	body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		min-width: 320px;
+		width: 100%;
+		color: #fff;
+		background-color: #5e5373;
+	}
+
+	body {
+		font-family: Montserrat;
+		font-size: 100%;
+		line-height: 1;
+		font-size: 1rem;
+	}
+
+	a {
+		text-decoration: underline;
+		color: #fff;
+	}
+
+	a:visited {
+		text-decoration: underline;
+		color: #aaa768;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	ul li {
+		list-style: none;
+	}
+
+	img {
+		vertical-align: top;
+	}
+
+	.wrapper {
+		width: 100%;
+		min-height: 100%;
+		overflow: hidden;
+	}
+
+	.rootpage {
+		padding: 30px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	@media (max-width: 767px) {
+		.rootpage {
+			padding: 30px 15px;
+		}
+	}
+
+	h1 {
+		color: #fff;
+		font-size: 2.5rem;
+		margin: 0px 0px 1.25rem 0px;
+	}
+
+	@media (max-width: 767px) {
+		h1 {
+			font-size: 1.85rem;
+			margin: 0px 0px 1.25rem 0px;
+		}
+	}
+
+	h6 {
+		color: #fff;
+		font-size: 1.25rem;
+		margin: 0px 0px 1rem 0px;
+	}
+
+	@media (max-width: 767px) {
+		h6 {
+			font-size: 1.125rem;
+			margin: 0px 0px 1rem 0px;
+		}
+	}
+
+	.rootpage__info {
+		line-height: 140%;
+		margin: 0px 0px 1.5rem 0px;
+	}
+
+	.rootpage__list {
+		margin: 0px 0px 2.25rem 1.25rem;
+	}
+
+	.rootpage__list li:not(:last-child) {
+		margin: 0px 0px 15px 0px;
+	}
+
+	.rootpage__contacts,
+	.rootpage__tnx {
+		border-radius: 200px;
+		padding: 20px 65px;
+		line-height: 140%;
+	}
+
+	@media (max-width: 767px) {
+
+		.rootpage__contacts,
+		.rootpage__tnx {
+			border-radius: 40px;
+			padding: 20px;
+		}
+	}
+
+	.rootpage__contacts {
+		background: #32b5a4;
+
+	}
+
+	.rootpage__contacts a {
+		color: #fff;
+	}
+
+	.rootpage__tnx {
+		background: #c22d63;
+		margin: 0px 0px 1rem 0px;
+	}
+</style>
+
+</html>

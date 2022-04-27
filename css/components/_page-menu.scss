@@ -1,0 +1,176 @@
+// * Page menu
+.page-menu._disable {
+    pointer-events: none;
+}
+.page-menu {
+    z-index: z('page-menu');
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    &__body {
+        margin-top: rem(130); // offset 42 + 88 header height
+        @media(max-width: $mobileSmall) {
+            margin-top: rem(100);
+        }
+    }
+    &__lines {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        span {
+            height: 100%;
+            transform-origin: top;
+            background: $grey;
+            transform: scaleX(1.05);
+        }
+    }
+}
+
+// * Navigation block
+.navigation-block {
+    nav {
+        padding-bottom: rem(56);
+
+        @media(max-width: $mobile) {
+            padding-bottom: rem(40);
+        }
+    }
+    &__list {
+        display: grid;
+        grid-template-columns: 52% 48%;
+        grid-template-rows: repeat(4, 1fr);
+        grid-auto-flow: column;
+        list-style-type: none;
+	    counter-reset: item;
+        row-gap: em(16);
+
+        @media(max-width: $mobile) {
+            grid-template-columns: 1fr;
+            grid-auto-flow: row;
+        }
+
+        li {
+            display: flex;
+            overflow: hidden;
+
+            &:before {
+                @extend %geometria14-regular;
+
+                color: $white;
+                counter-increment: item;
+                content: "0" counter(item);
+                margin-right: rem(20);
+            }
+        }
+        a {
+            @extend %geometria56-medium;
+
+            text-transform: uppercase;
+            position: relative;
+            display: inline-block;
+            overflow: hidden;
+            transition: clip-path 275ms ease;
+            &:hover{
+                &:hover::before {
+                    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+                }
+            }
+            &::before {
+                position: absolute;
+                content: attr(data-content);
+                text-transform: uppercase;
+                color: $lightGreen;
+                clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+                transition: clip-path 275ms ease;
+                z-index: 2;
+                -webkit-text-stroke: 1px $white;
+            }
+
+            & > div {
+                overflow: hidden;
+            }
+
+        }
+    }
+    &__footer {
+        display: grid;
+        grid-template-columns: 52% 48%;
+        
+        padding-top: rem(56);
+        border-top: 1px solid $white;
+        padding-bottom: rem(56);
+
+        @media(max-width: $mobile) {
+            grid-template-columns: 1fr;
+            row-gap: em(40);
+            padding-top: rem(16);
+            padding-bottom: rem(16);
+        }
+    }
+}
+
+// * links-block
+.links-block {
+    display: grid;
+    grid-template-columns: rem(108) 1fr;
+    gap: rem(40);
+    color: $lightBlack;
+
+    @media(max-width: $mobileSmall) {
+        // grid-template-columns: 1fr;
+        // gap: rem(8);
+        grid-template-columns: rem(87) 1fr;
+        gap: rem(32);
+    }
+
+    &__title {
+        @extend %geometria14-regular;
+    }
+    &__list {
+        max-width: rem(250);
+        * {
+            @extend %geometria14-medium;
+        }
+        li {
+            &:not(:last-child) {
+                margin-bottom: em(8);
+            }
+        }
+        a {
+            position: relative;
+
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 100%;
+                height: 1px;
+                width: 100%;
+                background: $lightBlack;
+                transform-origin: 100% 100%;
+                transform: scale3d(0, 1, 1);
+                transition: transform 0.3s ease;
+            }
+
+            &:hover {
+                &:before {
+                    transform-origin: 0 0;
+                    transform: scale3d(1, 1, 1);
+                }
+            }
+        }
+    }
+}

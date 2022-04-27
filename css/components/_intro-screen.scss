@@ -1,0 +1,198 @@
+// * Intro Screen
+.intro-screen {
+    position: relative;
+
+    &.is-view {
+        h1 > div > div {
+            transform: translate3d(0, 0, 0);
+            opacity: 1;
+        }
+        .quote-text {
+            opacity: 1;
+            transition: opacity $tf2;
+        }
+    }
+
+    h1 {
+        & > div {
+            div {
+                transform: translate3d(0, 100%, 0);
+                transition: transform $tf2, opacity $tf2;
+                opacity: 0;
+            }
+            &:nth-child(1) div {
+                transition-delay: 0.25s;
+            }
+            &:nth-child(2) div {
+                transition-delay: 0.35s;
+            }
+            &:nth-child(3) div {
+                transition-delay: 0.45s;
+            }
+            &:nth-child(4) div {
+                transition-delay: 0.55s;
+            }
+        }
+    }
+
+    .quote-text {
+        opacity: 0;
+    }
+
+    &__paggination {
+        min-height: rem(24);
+    }
+    &__content {
+        display: flex;
+
+        &_only-title {
+            .intro-screen__titles {
+                flex: 0 0 100%;
+                margin-bottom: rem(56);
+                @media(max-width: $mobile) {
+                    margin-bottom: rem(32);
+                }
+            }
+        }
+
+        &_grid {
+            display: grid;
+            grid-template-columns: 51.799% 48.211%;
+            margin-bottom: rem(56);
+            @media(max-width: $mobile) {
+                margin-bottom: rem(32);
+            }
+            @media(max-width: $tablet) {
+                grid-template-columns: 1fr;
+
+                .intro-screen__graphics {
+                    display: none;
+                }
+            }
+        }
+    }
+    &__titles {
+        flex: 0 0 51.799%;
+    }
+    &__graphics {
+        flex: 0 0 48.211%;
+        position: relative;
+
+        &_small {
+            .graphics-block {
+                display: flex;
+                justify-content: flex-end;
+                svg {
+                    max-width: rem(440);
+                }
+            }
+            
+        }
+    }
+    &__title {
+        padding-top: rem(40);
+        @media(max-width: $mobile) {
+            padding-top: rem(32);
+        }
+        h2 {
+            div:nth-child(even) {
+                color: $white;
+            }
+        }
+        &_black {
+            h2 div {
+                color: $mainColor!important;
+            }
+        }
+    }
+
+    .animate-circle {
+        top: -100%;
+        right: -10%;
+        width: rem(588);
+        height: rem(588);
+        @media(max-width: $mobile) {
+            top: -5%;
+            right: 50%;
+        }
+    }
+
+    // * Intro Media
+    .intro-media {
+        display: grid;
+        grid-template-columns: em(152) 1fr;
+        margin-bottom: rem(40);
+        @include adaptiveValue('gap', 40, 32, 0);
+
+        @media(max-width: $mobileSmall) {
+            font-size: 14px;
+        }
+
+        @media(max-width: em(900)) {
+            grid-template-columns: 1fr;
+            margin-bottom: 0;
+        }
+        
+        &__image-ibg {
+            width: 100%;
+            height: em(261);
+
+            @media(max-width: em(900)) {
+                max-width: em(152);
+            }
+        }
+    }
+
+    // * graphics-block
+    .graphics-block {
+        @media(min-width: em(900)) {
+            position: relative;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        img:not(.grid) {
+
+            @media(min-width: em(900)) {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: percent(360, 536);
+                height: percent(468, 561);
+            }
+            @media(max-width: em(900)) {
+                margin-bottom: rem(64);
+            }
+        }
+
+        svg {
+            will-change: transform;
+        }
+    }
+
+    // * quote-text
+    .quote-text {
+        max-width: rem(344);
+        color: $lightBlack;
+    }
+
+    h1 {
+        @extend %geometria104-48-medium;
+        position: absolute;
+        max-width: rem(660);
+
+        > div {
+            overflow: hidden;
+            &:nth-child(even) {
+                color: $white;
+            }
+        }
+        // span {
+        //     display: block;
+        //     text-transform: uppercase;
+        //     transform: translateY(100%);
+        //     opacity: 0;
+        // }
+    }
+}
+

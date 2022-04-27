@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>News - Gooreel</title>
+	<meta name="description" content="Gooreel">
+	<meta name="keywords" content="Gooreel, Games">
+	<meta property="og:locale" content="[locale]" />
+	<meta property="og:title" content="Gooreel" />
+	<meta property="og:description" content="Games" />
+	<meta property="og:url" content="[url]" />
+	<meta property="og:image" content="img/favicons/opengraph.jpg" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<link type="image/x-icon" rel="shortcut icon" href="img/favicons/favicon-ico-258x258.ico">
+	<link type="image/png" sizes="16x16" rel="icon" href="img/favicons/favicon-16x16.png">
+	<link type="image/png" sizes="32x32" rel="icon" href="img/favicons/favicon-32x32.png">
+	<link type="image/png" sizes="48x48" rel="icon" href="img/favicons/favicon-48x48.png">
+	<link sizes="180x180" rel="apple-touch-icon" href="img/favicons/apple-touch-icon-180x180.png">
+	<link color="#088ECB" rel="mask-icon" href="img/favicons/safari-pinned-tab-16x16.svg">
+	<meta name="msapplication-TileColor" content="#088ECB">
+	<meta name="msapplication-TileImage" content="img/favicons/mstile-144x144.png">
+	<meta name="application-name" content="Gooreel">
+	<meta name="theme-color" content="#000000">
+	<meta name="msapplication-config" content="others/browserconfig.xml">
+	<!-- <link rel="manifest" crossorigin="use-credentials" href="others/manifest.json"> -->
+	<style>
+		.preloader {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 9999;
+			transition-delay: 2.525s;
+		}
+
+		.preloader__wrapper {
+			display: grid;
+			grid-template-columns: repeat(5, 1fr);
+		}
+
+		.preloader__wrapper span {
+			transform-origin: top;
+			height: 100vh;
+			transform: scale(1.1, 1);
+			transition: transform 1.25s cubic-bezier(.87, -0.14, 0, 1.04);
+			background: #5FC194;
+			will-change: transform;
+		}
+
+		.preloader__wrapper span:nth-child(1) {
+			transition-delay: 0.1s;
+		}
+
+		.preloader__wrapper span:nth-child(2) {
+			transition-delay: 0.15s;
+		}
+
+		.preloader__wrapper span:nth-child(3) {
+			transition-delay: 0.220s;
+		}
+
+		.preloader__wrapper span:nth-child(4) {
+			transition-delay: 0.240s;
+		}
+
+		.preloader__wrapper span:nth-child(5) {
+			transition-delay: 0.275s;
+		}
+
+		html.loaded .preloader span {
+			transform: scaleY(0);
+		}
+
+		html.loaded .preloader {
+			transform: translateY(-200%);
+		}
+	</style>
+</head>
+
+<body>
+	<div id="page-top" class="wrapper">
+		<div class="preloader">
+			<div class="preloader__wrapper">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+		<header class="header">
+			<div class="header-shadow"></div>
+			<div class="header__container">
+				<div class="header__body">
+					<div class="header__controls">
+						<a class="header__logo" href="index.html">
+							<img src="img/interface/logo.svg" alt="Gooreel">
+						</a>
+						<div class="header__lang lang-toggle">
+							<div class="lang-toggle__wrapper">
+								<div class="lang-toggle__current">En</div>
+								<div class="lang-toggle__list">
+									<div class="lang-toggle__choose">Choose language</div>
+									<ul class="lang-toggle__links" data-da=".lang-toggle__spoller .spollers__body, 600, 0">
+										<!-- data-da="where(uniq class name),when(breakpoint),position(digi)" -->
+										<li>
+											<a href="#">Ua</a>
+										</li>
+										<li>
+											<a href="#">Ru</a>
+										</li>
+									</ul>
+								</div>
+								<div class="lang-toggle__spoller">
+									<div data-spollers class="spollers">
+										<div class="spollers__item">
+											<button type="button" data-spoller class="spollers__title"><img src="img/interface/spoller-arrow.svg" alt="Gooreel"></button>
+											<div class="spollers__body"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="header__actions">
+						<nav class="header__navigation">
+							<ul>
+								<li>
+									<a href="about.html">About</a>
+								</li>
+								<li>
+									<a href="team.html">Team</a>
+								</li>
+								<li>
+									<a href="career.html">Career</a>
+								</li>
+								<li>
+									<a href="games.html">Solutions</a>
+								</li>
+							</ul>
+						</nav>
+						<div class="header__burger">
+							<div class="icon-menu">
+								<div>
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+
+		<div class="page-menu">
+
+			<div class="shadow"></div>
+
+			<div class="page-menu__lines">
+				<span></span><span></span><span></span><span></span><span></span>
+			</div>
+
+			<div class="page-menu__container">
+				<div class="page-menu__body">
+					<div class="navigation-block">
+						<nav>
+							<ol class="navigation-block__list">
+								<li>
+									<a href="about.html" data-content="ABOUT">ABOUT</a>
+								</li>
+								<li>
+									<a href="team.html" data-content="OUR TEAM">OUR TEAM</a>
+								</li>
+								<li>
+									<a href="games.html" data-content="SOLUTIONS">SOLUTIONS</a>
+								</li>
+								<li>
+									<a href="news.html" data-content="NEWS">NEWS</a>
+								</li>
+								<li>
+									<a href="career.html" data-content="CAREER">CAREER</a>
+								</li>
+								<li>
+									<a href="partners.html" data-content="PARTNERS">PARTNERS</a>
+								</li>
+								<li>
+									<a href="contacts.html" data-content="CONTaCTS">CONTaCTS</a>
+								</li>
+							</ol>
+						</nav>
+						<div class="navigation-block__footer">
+							<div class="links-block">
+								<span class="links-block__title">Contacts us</span>
+								<ul class="links-block__list">
+									<li>
+										<a href="mailto:sales@goreel.com">sales@goreel.com</a>
+									</li>
+									<li>
+										<a href="mailto:example1@goreel.com">example1@goreel.com</a>
+									</li>
+									<li>
+										<a href="mailto:example2@goreel.com">example2@goreel.com</a>
+									</li>
+									<li>
+										<a href="tel:+380673433345">+ 380 673 433 345</a>
+									</li>
+									<li>
+										<div>
+											<span>Heelsumstraat 51,</span>
+											<span>E-Commerce Park, Curaçao</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="links-block">
+								<span class="links-block__title">Networks</span>
+								<ul class="links-block__list">
+									<li>
+										<a href="https://www.facebook.com/" target="_blank">Facebook</a>
+									</li>
+									<li>
+										<a href="https://www.linkedin.com/" target="_blank">Linkedin</a>
+									</li>
+									<li>
+										<a href="https://www.instagram.com/" target="_blank">Instagram</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<main class="page news-page">
+
+			<!-- === === === INTRO BLOCK === === === -->
+			<div class="intro-screen">
+				<div class="animate-circle"></div>
+				<div class="intro-screen__container">
+					<div class="intro-screen__wrapper">
+						<div class="intro-screen__paggination">
+							<nav class="breadcrumbs">
+								<ul class="breadcrumbs__list" itemscope itemtype="http://schema.org/BreadcrumbList">
+									<li itemscope itemtype="http://schema.org/ListItem">
+										<a class="breadcrumbs__link" itemprop="item" href="index.html">Main</a>
+										<meta itemprop="position" content="1" />
+									</li>
+									<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+										<span class="breadcrumbs__link" itemprop="name">News</span>
+										<meta itemprop="position" content="2" />
+									</li>
+								</ul>
+							</nav>
+
+						</div>
+						<div class="intro-screen__content intro-screen__content_only-title">
+							<div class="intro-screen__titles">
+								<div class="intro-screen__title">
+									<h2>News</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- === === === INTRO BLOCK === === === -->
+
+			<!-- === === === S-TABS === === === -->
+			<div class="s-news">
+				<div class="s-news__container">
+
+					<div class="tabs-block _tabs">
+
+						<div class="_tabs-mobile">
+
+							<div class="tabs-mobile__value"></div>
+
+							<nav class="tabs-block__nav tabs-mobile__options">
+								<div class="tabs-block__nav-wrap">
+									<div class="tabs-block__item _tabs-item _active">All<span>(8)</span></div>
+									<div class="tabs-block__item _tabs-item">General<span>(5)</span></div>
+									<div class="tabs-block__item _tabs-item">News<span>(2)</span></div>
+									<div class="tabs-block__item _tabs-item">Games<span>(4)</span></div>
+									<div class="tabs-block__item _tabs-item">Interview<span>(5)</span></div>
+								</div>
+							</nav>
+
+							<form action="#" class="search-form">
+								<input type="text" class="search-form__input" placeholder="Search">
+								<div class="search-form__box">
+									<button type="submit" class="search-form__btn">
+										<img src="img/interface/search.svg" alt="Gooreel">
+									</button>
+								</div>
+							</form>
+						</div>
+
+						<!-- ACTIVE TABS BODY -->
+						<div class="tabs-block__body">
+
+							<div class="tabs-block__block _tabs-block _active" data-view-more>
+								<div class="tabs-grid">
+
+									<div class="news-card">
+										<a href="article.html" class="news-card__image-ibg">
+											<img src="img/news-1.png" alt="Gooreel">
+										</a>
+										<div class="news-card__info">
+											<span>
+												Date:
+												<a href="article.html">
+													<time datetime="2021-03-24">24.03.2021</time>
+												</a>
+											</span>
+											<span>
+												Tag:
+												<a href="article.html">News</a>
+											</span>
+										</div>
+										<div class="news-card__title">
+											<h3>
+												Goreel grows latam footprint with doradobet
+											</h3>
+										</div>
+										<div>
+											<a href="article.html" class="card-link">
+												<img src="img/interface/card-arrow.svg" alt="Gooreel">
+											</a>
+										</div>
+									</div>
+									<div class="news-card">
+										<a href="article.html" class="news-card__image-ibg">
+											<img src="img/news-1.png" alt="Gooreel">
+										</a>
+										<div class="news-card__info">
+											<span>
+												Date:
+												<a href="article.html">
+													<time datetime="2021-03-24">24.03.2021</time>
+												</a>
+											</span>
+											<span>
+												Tag:
+												<a href="article.html">News</a>
+											</span>
+										</div>
+										<div class="news-card__title">
+											<h3>
+												Goreel grows latam footprint with doradobet
+											</h3>
+										</div>
+										<div>
+											<a href="article.html" class="card-link">
+												<img src="img/interface/card-arrow.svg" alt="Gooreel">
+											</a>
+										</div>
+									</div>
+									<div class="news-card">
+										<a href="article.html" class="news-card__image-ibg">
+											<img src="img/news-1.png" alt="Gooreel">
+										</a>
+										<div class="news-card__info">
+											<span>
+												Date:
+												<a href="article.html">
+													<time datetime="2021-03-24">24.03.2021</time>
+												</a>
+											</span>
+											<span>
+												Tag:
+												<a href="article.html">News</a>
+											</span>
+										</div>
+										<div class="news-card__title">
+											<h3>
+												Goreel grows latam footprint with doradobet
+											</h3>
+										</div>
+										<div>
+											<a href="article.html" class="card-link">
+												<img src="img/interface/card-arrow.svg" alt="Gooreel">
+											</a>
+										</div>
+									</div>
+
+									<div class="news-card">
+										<a href="article.html" class="news-card__image-ibg">
+											<img src="img/news-1.png" alt="Gooreel">
+										</a>
+										<div class="news-card__info">
+											<span>
+												Date:
+												<a href="article.html">
+													<time datetime="2021-03-24">24.03.2021</time>
+												</a>
+											</span>
+											<span>
+												Tag:
+												<a href="article.html">News</a>
+											</span>
+										</div>
+										<div class="news-card__title">
+											<h3>
+												Goreel grows latam footprint with doradobet
+											</h3>
+										</div>
+										<div>
+											<a href="article.html" class="card-link">
+												<img src="img/interface/card-arrow.svg" alt="Gooreel">
+											</a>
+										</div>
+									</div>
+									<div class="news-card">
+										<a href="article.html" class="news-card__image-ibg">
+											<img src="img/news-1.png" alt="Gooreel">
+										</a>
+										<div class="news-card__info">
+											<span>
+												Date:
+												<a href="article.html">
+													<time datetime="2021-03-24">24.03.2021</time>
+												</a>
+											</span>
+											<span>
+												Tag:
+												<a href="article.html">News</a>
+											</span>
+										</div>
+										<div class="news-card__title">
+											<h3>
+												Goreel grows latam footprint with doradobet
+											</h3>
+										</div>
+										<div>
+											<a href="article.html" class="card-link">
+												<img src="img/interface/card-arrow.svg" alt="Gooreel">
+											</a>
+										</div>
+									</div>
+									<div class="news-card">
+										<a href="article.html" class="news-card__image-ibg">
+											<img src="img/news-1.png" alt="Gooreel">
+										</a>
+										<div class="news-card__info">
+											<span>
+												Date:
+												<a href="article.html">
+													<time datetime="2021-03-24">24.03.2021</time>
+												</a>
+											</span>
+											<span>
+												Tag:
+												<a href="article.html">News</a>
+											</span>
+										</div>
+										<div class="news-card__title">
+											<h3>
+												Goreel grows latam footprint with doradobet
+											</h3>
+										</div>
+										<div>
+											<a href="article.html" class="card-link">
+												<img src="img/interface/card-arrow.svg" alt="Gooreel">
+											</a>
+										</div>
+									</div>
+
+									<div class="news-card">
+										<a href="article.html" class="news-card__image-ibg">
+											<img src="img/news-1.png" alt="Gooreel">
+										</a>
+										<div class="news-card__info">
+											<span>
+												Date:
+												<a href="article.html">
+													<time datetime="2021-03-24">24.03.2021</time>
+												</a>
+											</span>
+											<span>
+												Tag:
+												<a href="article.html">News</a>
+											</span>
+										</div>
+										<div class="news-card__title">
+											<h3>
+												Goreel grows latam footprint with doradobet
+											</h3>
+										</div>
+										<div>
+											<a href="article.html" class="card-link">
+												<img src="img/interface/card-arrow.svg" alt="Gooreel">
+											</a>
+										</div>
+									</div>
+									<div class="news-card">
+										<a href="article.html" class="news-card__image-ibg">
+											<img src="img/news-1.png" alt="Gooreel">
+										</a>
+										<div class="news-card__info">
+											<span>
+												Date:
+												<a href="article.html">
+													<time datetime="2021-03-24">24.03.2021</time>
+												</a>
+											</span>
+											<span>
+												Tag:
+												<a href="article.html">News</a>
+											</span>
+										</div>
+										<div class="news-card__title">
+											<h3>
+												Goreel grows latam footprint with doradobet
+											</h3>
+										</div>
+										<div>
+											<a href="article.html" class="card-link">
+												<img src="img/interface/card-arrow.svg" alt="Gooreel">
+											</a>
+										</div>
+									</div>
+									<div class="news-card">
+										<a href="article.html" class="news-card__image-ibg">
+											<img src="img/news-1.png" alt="Gooreel">
+										</a>
+										<div class="news-card__info">
+											<span>
+												Date:
+												<a href="article.html">
+													<time datetime="2021-03-24">24.03.2021</time>
+												</a>
+											</span>
+											<span>
+												Tag:
+												<a href="article.html">News</a>
+											</span>
+										</div>
+										<div class="news-card__title">
+											<h3>
+												Goreel grows latam footprint with doradobet
+											</h3>
+										</div>
+										<div>
+											<a href="article.html" class="card-link">
+												<img src="img/interface/card-arrow.svg" alt="Gooreel">
+											</a>
+										</div>
+									</div>
+
+								</div>
+
+								<div class="square-view-all" data-is-view>
+									<div>
+										<a class="more-info" href="#" data-show-more="Show more,Hide">
+											<span class="more-info__text">View all</span>
+											<img data-src="img/interface/link-circles.svg" data-inline-svg alt="Gooreel">
+										</a>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+						<!-- ACTIVE TABS BODY -->
+
+						<div class="tabs-block__block _tabs-block" data-view-more>
+
+							<div class="tabs-grid">
+								<div class="news-card">
+									<a href="article.html" class="news-card__image-ibg">
+										<img src="img/news-1.png" alt="Gooreel">
+									</a>
+									<div class="news-card__info">
+										<span>
+											Date:
+											<a href="article.html">
+												<time datetime="2021-03-24">24.03.2021</time>
+											</a>
+										</span>
+										<span>
+											Tag:
+											<a href="article.html">News</a>
+										</span>
+									</div>
+									<div class="news-card__title">
+										<h3>
+											Goreel grows latam footprint with doradobet
+										</h3>
+									</div>
+									<div>
+										<a href="article.html" class="card-link">
+											<img src="img/interface/card-arrow.svg" alt="Gooreel">
+										</a>
+									</div>
+								</div>
+								<div class="news-card">
+									<a href="article.html" class="news-card__image-ibg">
+										<img src="img/news-1.png" alt="Gooreel">
+									</a>
+									<div class="news-card__info">
+										<span>
+											Date:
+											<a href="article.html">
+												<time datetime="2021-03-24">24.03.2021</time>
+											</a>
+										</span>
+										<span>
+											Tag:
+											<a href="article.html">News</a>
+										</span>
+									</div>
+									<div class="news-card__title">
+										<h3>
+											Goreel grows latam footprint with doradobet
+										</h3>
+									</div>
+									<div>
+										<a href="article.html" class="card-link">
+											<img src="img/interface/card-arrow.svg" alt="Gooreel">
+										</a>
+									</div>
+								</div>
+								<div class="news-card">
+									<a href="article.html" class="news-card__image-ibg">
+										<img src="img/news-1.png" alt="Gooreel">
+									</a>
+									<div class="news-card__info">
+										<span>
+											Date:
+											<a href="article.html">
+												<time datetime="2021-03-24">24.03.2021</time>
+											</a>
+										</span>
+										<span>
+											Tag:
+											<a href="article.html">News</a>
+										</span>
+									</div>
+									<div class="news-card__title">
+										<h3>
+											Goreel grows latam footprint with doradobet
+										</h3>
+									</div>
+									<div>
+										<a href="article.html" class="card-link">
+											<img src="img/interface/card-arrow.svg" alt="Gooreel">
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="square-view-all" data-is-view>
+								<div>
+									<a class="more-info" href="#" data-show-more="Show more,Hide">
+										<span class="more-info__text">Show more</span>
+										<img data-src="img/interface/link-circles.svg" data-inline-svg alt="Gooreel">
+									</a>
+								</div>
+							</div>
+
+						</div>
+						<div class="tabs-block__block _tabs-block" data-view-more>
+
+							<div class="tabs-grid">
+								<div class="news-card">
+									<a href="article.html" class="news-card__image-ibg">
+										<img src="img/news-1.png" alt="Gooreel">
+									</a>
+									<div class="news-card__info">
+										<span>
+											Date:
+											<a href="article.html">
+												<time datetime="2021-03-24">24.03.2021</time>
+											</a>
+										</span>
+										<span>
+											Tag:
+											<a href="article.html">News</a>
+										</span>
+									</div>
+									<div class="news-card__title">
+										<h3>
+											Goreel grows latam footprint with doradobet
+										</h3>
+									</div>
+									<div>
+										<a href="article.html" class="card-link">
+											<img src="img/interface/card-arrow.svg" alt="Gooreel">
+										</a>
+									</div>
+								</div>
+								<div class="news-card">
+									<a href="article.html" class="news-card__image-ibg">
+										<img src="img/news-1.png" alt="Gooreel">
+									</a>
+									<div class="news-card__info">
+										<span>
+											Date:
+											<a href="article.html">
+												<time datetime="2021-03-24">24.03.2021</time>
+											</a>
+										</span>
+										<span>
+											Tag:
+											<a href="article.html">News</a>
+										</span>
+									</div>
+									<div class="news-card__title">
+										<h3>
+											Goreel grows latam footprint with doradobet
+										</h3>
+									</div>
+									<div>
+										<a href="article.html" class="card-link">
+											<img src="img/interface/card-arrow.svg" alt="Gooreel">
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="square-view-all" data-is-view>
+								<div>
+									<a class="more-info" href="#" data-show-more="Show more,Hide">
+										<span class="more-info__text">Show more</span>
+										<img data-src="img/interface/link-circles.svg" data-inline-svg alt="Gooreel">
+									</a>
+								</div>
+							</div>
+
+						</div>
+						<div class="tabs-block__block _tabs-block" data-view-more>
+
+							<div class="tabs-grid">
+								<div class="news-card">
+									<a href="article.html" class="news-card__image-ibg">
+										<img src="img/news-1.png" alt="Gooreel">
+									</a>
+									<div class="news-card__info">
+										<span>
+											Date:
+											<a href="article.html">
+												<time datetime="2021-03-24">24.03.2021</time>
+											</a>
+										</span>
+										<span>
+											Tag:
+											<a href="article.html">News</a>
+										</span>
+									</div>
+									<div class="news-card__title">
+										<h3>
+											Goreel grows latam footprint with doradobet
+										</h3>
+									</div>
+									<div>
+										<a href="article.html" class="card-link">
+											<img src="img/interface/card-arrow.svg" alt="Gooreel">
+										</a>
+									</div>
+								</div>
+								<div class="news-card">
+									<a href="article.html" class="news-card__image-ibg">
+										<img src="img/news-1.png" alt="Gooreel">
+									</a>
+									<div class="news-card__info">
+										<span>
+											Date:
+											<a href="article.html">
+												<time datetime="2021-03-24">24.03.2021</time>
+											</a>
+										</span>
+										<span>
+											Tag:
+											<a href="article.html">News</a>
+										</span>
+									</div>
+									<div class="news-card__title">
+										<h3>
+											Goreel grows latam footprint with doradobet
+										</h3>
+									</div>
+									<div>
+										<a href="article.html" class="card-link">
+											<img src="img/interface/card-arrow.svg" alt="Gooreel">
+										</a>
+									</div>
+								</div>
+								<div class="news-card">
+									<a href="article.html" class="news-card__image-ibg">
+										<img src="img/news-1.png" alt="Gooreel">
+									</a>
+									<div class="news-card__info">
+										<span>
+											Date:
+											<a href="article.html">
+												<time datetime="2021-03-24">24.03.2021</time>
+											</a>
+										</span>
+										<span>
+											Tag:
+											<a href="article.html">News</a>
+										</span>
+									</div>
+									<div class="news-card__title">
+										<h3>
+											Goreel grows latam footprint with doradobet
+										</h3>
+									</div>
+									<div>
+										<a href="article.html" class="card-link">
+											<img src="img/interface/card-arrow.svg" alt="Gooreel">
+										</a>
+									</div>
+								</div>
+
+								<div class="news-card">
+									<a href="article.html" class="news-card__image-ibg">
+										<img src="img/news-1.png" alt="Gooreel">
+									</a>
+									<div class="news-card__info">
+										<span>
+											Date:
+											<a href="article.html">
+												<time datetime="2021-03-24">24.03.2021</time>
+											</a>
+										</span>
+										<span>
+											Tag:
+											<a href="article.html">News</a>
+										</span>
+									</div>
+									<div class="news-card__title">
+										<h3>
+											Goreel grows latam footprint with doradobet
+										</h3>
+									</div>
+									<div>
+										<a href="article.html" class="card-link">
+											<img src="img/interface/card-arrow.svg" alt="Gooreel">
+										</a>
+									</div>
+								</div>
+								<div class="news-card">
+									<a href="article.html" class="news-card__image-ibg">
+										<img src="img/news-1.png" alt="Gooreel">
+									</a>
+									<div class="news-card__info">
+										<span>
+											Date:
+											<a href="article.html">
+												<time datetime="2021-03-24">24.03.2021</time>
+											</a>
+										</span>
+										<span>
+											Tag:
+											<a href="article.html">News</a>
+										</span>
+									</div>
+									<div class="news-card__title">
+										<h3>
+											Goreel grows latam footprint with doradobet
+										</h3>
+									</div>
+									<div>
+										<a href="article.html" class="card-link">
+											<img src="img/interface/card-arrow.svg" alt="Gooreel">
+										</a>
+									</div>
+								</div>
+								<div class="news-card">
+									<a href="article.html" class="news-card__image-ibg">
+										<img src="img/news-1.png" alt="Gooreel">
+									</a>
+									<div class="news-card__info">
+										<span>
+											Date:
+											<a href="article.html">
+												<time datetime="2021-03-24">24.03.2021</time>
+											</a>
+										</span>
+										<span>
+											Tag:
+											<a href="article.html">News</a>
+										</span>
+									</div>
+									<div class="news-card__title">
+										<h3>
+											Goreel grows latam footprint with doradobet
+										</h3>
+									</div>
+									<div>
+										<a href="article.html" class="card-link">
+											<img src="img/interface/card-arrow.svg" alt="Gooreel">
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="square-view-all" data-is-view>
+								<div>
+									<a class="more-info" href="#" data-show-more="Show more,Hide">
+										<span class="more-info__text">Show more</span>
+										<img data-src="img/interface/link-circles.svg" data-inline-svg alt="Gooreel">
+									</a>
+								</div>
+							</div>
+
+						</div>
+						<div class="tabs-block__block _tabs-block" data-view-more>
+
+							<div class="tabs-grid">
+								<div class="news-card">
+									<a href="article.html" class="news-card__image-ibg">
+										<img src="img/news-1.png" alt="Gooreel">
+									</a>
+									<div class="news-card__info">
+										<span>
+											Date:
+											<a href="article.html">
+												<time datetime="2021-03-24">24.03.2021</time>
+											</a>
+										</span>
+										<span>
+											Tag:
+											<a href="article.html">News</a>
+										</span>
+									</div>
+									<div class="news-card__title">
+										<h3>
+											Goreel grows latam footprint with doradobet
+										</h3>
+									</div>
+									<div>
+										<a href="article.html" class="card-link">
+											<img src="img/interface/card-arrow.svg" alt="Gooreel">
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="square-view-all" data-is-view>
+								<div>
+									<a class="more-info" href="#" data-show-more="Show more,Hide">
+										<span class="more-info__text">Show more</span>
+										<img data-src="img/interface/link-circles.svg" data-inline-svg alt="Gooreel">
+									</a>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+			<!-- === === === S-TABS === === === -->
+
+			<!-- === === === PAGGING === === === -->
+			<div class="pagination">
+				<ul class="pagination__list">
+					<li class="pagination__prev _disable">
+						<a href="#">&lsaquo;</a>
+					</li>
+					<li class="pagination__item _active">
+						<span>1</span>
+					</li>
+					<li class="pagination__item">
+						<a href="#">2</a>
+					</li>
+					<li class="pagination__item">
+						<a href="#">3</a>
+					</li>
+					<li class="pagination__dots">
+						<span>...</span>
+					</li>
+					<li class="pagination__item">
+						<a href="#">8</a>
+					</li>
+					<li class="pagination__next">
+						<a href="#">&rsaquo;</a>
+					</li>
+				</ul>
+			</div>
+
+			<!-- === === === PAGGING === === === -->
+
+			<!-- === === === TITERS === === === -->
+			<div class="titers__container">
+				<div class="animate-circle"></div>
+				<span class="section-descr">Next page</span>
+			</div>
+			<div class="titers">
+				<div class="titers-border"></div>
+				<div class="titers__main">
+					<ul class="titers__list" data-speed="50">
+						<li class="titers__item">Contacts<span> / </span></li>
+						<li class="titers__item">Contacts<span> / </span></li>
+						<li class="titers__item">Contacts<span> / </span></li>
+						<li class="titers__item">Contacts<span> / </span></li>
+						<li class="titers__item">Contacts<span> / </span></li>
+						<li class="titers__item">Contacts<span> / </span></li>
+						<li class="titers__item">Contacts<span> / </span></li>
+						<li class="titers__item">Contacts<span> / </span></li>
+						<li class="titers__item">Contacts<span> / </span></li>
+						<li class="titers__item">Contacts<span> / </span></li>
+					</ul>
+					<ul class="titers__list" data-speed="50">
+						<li class="titers__item">Contacts<span> / </span></li>
+						<li class="titers__item">Contacts<span> / </span></li>
+						<li class="titers__item">Contacts<span> / </span></li>
+						<li class="titers__item">Contacts<span> / </span></li>
+						<li class="titers__item">Contacts<span> / </span></li>
+						<li class="titers__item">Contacts<span> / </span></li>
+						<li class="titers__item">Contacts<span> / </span></li>
+						<li class="titers__item">Contacts<span> / </span></li>
+						<li class="titers__item">Contacts<span> / </span></li>
+						<li class="titers__item">Contacts<span> / </span></li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- === === === TITERS === === === -->
+
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__body">
+					<div class="navigation-block">
+						<nav>
+							<ol class="navigation-block__list">
+								<li>
+									<a href="about.html" data-content="ABOUT">ABOUT</a>
+								</li>
+								<li>
+									<a href="about.html" data-content="OUR TEAM">OUR TEAM</a>
+								</li>
+								<li>
+									<a href="games.html" data-content="SOLUTIONS">SOLUTIONS</a>
+								</li>
+								<li>
+									<a href="news.html" data-content="NEWS">NEWS</a>
+								</li>
+								<li>
+									<a href="career.html" data-content="CAREER">CAREER</a>
+								</li>
+								<li>
+									<a href="partners.html" data-content="PARTNERS">PARTNERS</a>
+								</li>
+								<li>
+									<a href="contacts.html" data-content="CONTaCTS">CONTaCTS</a>
+								</li>
+							</ol>
+						</nav>
+						<div class="navigation-block__footer">
+							<div class="links-block">
+								<span class="links-block__title">Contacts us</span>
+								<ul class="links-block__list">
+									<li>
+										<a href="mailto:sales@goreel.com">sales@goreel.com</a>
+									</li>
+									<li>
+										<a href="mailto:example1@goreel.com">example1@goreel.com</a>
+									</li>
+									<li>
+										<a href="mailto:example2@goreel.com">example2@goreel.com</a>
+									</li>
+									<li>
+										<a href="tel:+380673433345">+ 380 673 433 345</a>
+									</li>
+									<li>
+										<div>
+											<span>Heelsumstraat 51,</span>
+											<span>E-Commerce Park, Curaçao</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="links-block">
+								<span class="links-block__title">Networks</span>
+								<ul class="links-block__list">
+									<li>
+										<a href="https://www.facebook.com/" target="_blank">Facebook</a>
+									</li>
+									<li>
+										<a href="https://www.linkedin.com/" target="_blank">Linkedin</a>
+									</li>
+									<li>
+										<a href="https://www.instagram.com/" target="_blank">Instagram</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="footer__copyright">
+						<div>All rights reserved &copy; 2015-2021</div>
+						<div>
+							<span>By:</span>
+							<a href="https://in-create.com/" target="_blank" rel="nofollow">
+								<img src="img/icons/logo-increate.svg" alt="Increate">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__anchor">
+				<div class="footer__anchor-grid">
+					<img data-src="img/interface/footer-anchor-grid.svg" data-inline-svg alt="Gooreel">
+				</div>
+				<a href="#page-top" class="footer__anchor-link" data-anchor>
+					<img data-src="img/interface/anchor-arrow.svg" data-inline-svg alt="Gooreel">
+					<span>to the top</span>
+				</a>
+			</div>
+		</footer>
+		<!-- style -->
+		<link rel="stylesheet" href="css/style.min.css">
+		<!-- global variable -->
+		<script>
+			let validationUnfillError = "Заповніть поле"
+			let validationUncorrectError = "Некоректний формат"
+		</script>
+		<!-- custom -->
+		<script defer src="js/main.min.js"></script>
+	</div>
+</body>
+
+</html>
